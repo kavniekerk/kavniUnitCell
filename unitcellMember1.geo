@@ -8,7 +8,7 @@
 //
 // *********************************************************************************
 
-// made visible change
+// made invisible change visible
 
 // Extrusion Precision
 
