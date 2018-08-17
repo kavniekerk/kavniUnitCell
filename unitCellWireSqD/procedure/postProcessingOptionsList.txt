@@ -1,0 +1,759 @@
+B.5 Post-processing options list
+PostProcessing.AnimationDelay
+Delay (in seconds) between frames in automatic animation mode
+Default value: 0.25
+Saved in: General.OptionsFileName
+
+PostProcessing.AnimationCycle
+Cycle through views instead of time steps in automatic animation mode
+Default value: 0
+Saved in: General.OptionsFileName
+
+PostProcessing.CombineRemoveOriginal
+Remove original views after a Combine operation
+Default value: 1
+Saved in: General.OptionsFileName
+
+PostProcessing.Format
+Default file format for post-processing views (0=ASCII view, 1=binary view, 2=parsed view, 3=STL triangulation, 4=text, 5=mesh)
+Default value: 0
+Saved in: General.OptionsFileName
+
+PostProcessing.HorizontalScales
+Display value scales horizontally
+Default value: 1
+Saved in: General.OptionsFileName
+
+PostProcessing.Link
+Link post-processing views (0=none, 1/2=changes in visible/all, 3/4=everything in visible/all)
+Default value: 0
+Saved in: General.OptionsFileName
+
+PostProcessing.NbViews
+Current number of views merged (read-only)
+Default value: 0
+Saved in: -
+
+PostProcessing.Plugins
+Enable default post-processing plugins?
+Default value: 1
+Saved in: General.OptionsFileName
+
+PostProcessing.Smoothing
+Apply (non-reversible) smoothing to post-processing view when merged
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AxesFormatX
+Number format for X-axis (in standard C form)
+Default value: "%.3g"
+Saved in: General.OptionsFileName
+
+View.AxesFormatY
+Number format for Y-axis (in standard C form)
+Default value: "%.3g"
+Saved in: General.OptionsFileName
+
+View.AxesFormatZ
+Number format for Z-axis (in standard C form)
+Default value: "%.3g"
+Saved in: General.OptionsFileName
+
+View.AxesLabelX
+X-axis label
+Default value: ""
+Saved in: General.OptionsFileName
+
+View.AxesLabelY
+Y-axis label
+Default value: ""
+Saved in: General.OptionsFileName
+
+View.AxesLabelZ
+Z-axis label
+Default value: ""
+Saved in: General.OptionsFileName
+
+View.FileName
+Default post-processing view file name
+Default value: ""
+Saved in: -
+
+View.Format
+Number format (in standard C form)
+Default value: "%.3g"
+Saved in: General.OptionsFileName
+
+View.GeneralizedRaiseX
+Generalized elevation of the view along X-axis (in model coordinates)
+Default value: "v0"
+Saved in: General.OptionsFileName
+
+View.GeneralizedRaiseY
+Generalized elevation of the view along Y-axis (in model coordinates)
+Default value: "v1"
+Saved in: General.OptionsFileName
+
+View.GeneralizedRaiseZ
+Generalized elevation of the view along Z-axis (in model coordinates)
+Default value: "v2"
+Saved in: General.OptionsFileName
+
+View.Name
+Default post-processing view name
+Default value: ""
+Saved in: -
+
+View.Stipple0
+First stippling pattern
+Default value: "1*0x1F1F"
+Saved in: General.OptionsFileName
+
+View.Stipple1
+Second stippling pattern
+Default value: "1*0x3333"
+Saved in: General.OptionsFileName
+
+View.Stipple2
+Third stippling pattern
+Default value: "1*0x087F"
+Saved in: General.OptionsFileName
+
+View.Stipple3
+Fourth stippling pattern
+Default value: "1*0xCCCF"
+Saved in: General.OptionsFileName
+
+View.Stipple4
+Fifth stippling pattern
+Default value: "2*0x1111"
+Saved in: General.OptionsFileName
+
+View.Stipple5
+Sixth stippling pattern
+Default value: "2*0x0F0F"
+Saved in: General.OptionsFileName
+
+View.Stipple6
+Seventh stippling pattern
+Default value: "1*0xCFFF"
+Saved in: General.OptionsFileName
+
+View.Stipple7
+Eighth stippling pattern
+Default value: "2*0x0202"
+Saved in: General.OptionsFileName
+
+View.Stipple8
+Ninth stippling pattern
+Default value: "2*0x087F"
+Saved in: General.OptionsFileName
+
+View.Stipple9
+Tenth stippling pattern
+Default value: "1*0xFFFF"
+Saved in: General.OptionsFileName
+
+View.AdaptVisualizationGrid
+Use adaptive visualization grid (for high-order elements)?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AngleSmoothNormals
+Threshold angle below which normals are not smoothed
+Default value: 30
+Saved in: General.OptionsFileName
+
+View.ArrowSizeMax
+Maximum display size of arrows (in pixels)
+Default value: 60
+Saved in: General.OptionsFileName
+
+View.ArrowSizeMin
+Minimum display size of arrows (in pixels)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AutoPosition
+Position the scale or 2D plot automatically
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.Axes
+Axes (0=none, 1=simple axes, 2=box, 3=full grid, 4=open grid, 5=ruler)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AxesMikado
+Mikado axes style
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AxesAutoPosition
+Position the axes automatically
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.AxesMaxX
+Maximum X-axis coordinate
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.AxesMaxY
+Maximum Y-axis coordinate
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.AxesMaxZ
+Maximum Z-axis coordinate
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.AxesMinX
+Minimum X-axis coordinate
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AxesMinY
+Minimum Y-axis coordinate
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AxesMinZ
+Minimum Z-axis coordinate
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.AxesTicsX
+Number of tics on the X-axis
+Default value: 5
+Saved in: General.OptionsFileName
+
+View.AxesTicsY
+Number of tics on the Y-axis
+Default value: 5
+Saved in: General.OptionsFileName
+
+View.AxesTicsZ
+Number of tics on the Z-axis
+Default value: 5
+Saved in: General.OptionsFileName
+
+View.Boundary
+Draw the `N minus b'-dimensional boundary of the element (N=element dimension, b=option value)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.CenterGlyphs
+Center glyphs (arrows, numbers, etc.)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.Clip
+Enable clipping planes? (Plane[i]=2^i, i=0,...,5)
+Default value: 0
+Saved in: -
+
+View.ColormapAlpha
+Colormap alpha channel value (used only if != 1)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.ColormapAlphaPower
+Colormap alpha channel power
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ColormapBeta
+Colormap beta parameter (gamma = 1-beta)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ColormapBias
+Colormap bias
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ColormapCurvature
+Colormap curvature or slope coefficient
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ColormapInvert
+Invert the color values, i.e., replace x with (255-x) in the colormap?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ColormapNumber
+Default colormap number
+Default value: 2
+Saved in: General.OptionsFileName
+
+View.ColormapRotation
+Incremental colormap rotation
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ColormapSwap
+Swap the min/max values in the colormap?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.CustomMax
+User-defined maximum value to be displayed
+Default value: 0
+Saved in: -
+
+View.CustomMin
+User-defined minimum value to be displayed
+Default value: 0
+Saved in: -
+
+View.DisplacementFactor
+Displacement amplification
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawHexahedra
+Display post-processing hexahedra?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawLines
+Display post-processing lines?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawPoints
+Display post-processing points?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawPrisms
+Display post-processing prisms?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawPyramids
+Display post-processing pyramids?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawQuadrangles
+Display post-processing quadrangles?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawScalars
+Display scalar values?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawSkinOnly
+Draw only the skin of 3D scalar views?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.DrawStrings
+Display post-processing annotation strings?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawTensors
+Display tensor values?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawTetrahedra
+Display post-processing tetrahedra?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawTriangles
+Display post-processing triangles?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.DrawVectors
+Display vector values?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.Explode
+Element shrinking factor (between 0 and 1)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.ExternalView
+Index of the view used to color vector fields (-1=self)
+Default value: -1
+Saved in: General.OptionsFileName
+
+View.FakeTransparency
+Use fake transparency (cheaper than the real thing, but incorrect)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.GeneralizedRaiseFactor
+Generalized raise amplification factor
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.GeneralizedRaiseView
+Index of the view used for generalized raise (-1=self)
+Default value: -1
+Saved in: General.OptionsFileName
+
+View.GlyphLocation
+Glyph (arrow, number, etc.) location (1=center of gravity, 2=node)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.Height
+Height (in pixels) of the scale or 2D plot
+Default value: 200
+Saved in: General.OptionsFileName
+
+View.IntervalsType
+Type of interval display (1=iso, 2=continuous, 3=discrete, 4=numeric)
+Default value: 2
+Saved in: General.OptionsFileName
+
+View.Light
+Enable lighting for the view
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.LightLines
+Light element edges
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.LightTwoSide
+Light both sides of surfaces (leads to slower rendering)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.LineType
+Display lines as solid color segments (0) or 3D cylinders (1)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.LineWidth
+Display width of lines (in pixels)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.MaxRecursionLevel
+Maximum recursion level for adaptive views
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.Max
+Maximum value in the view (read-only)
+Default value: 0
+Saved in: -
+
+View.MaxX
+Maximum view coordinate along the X-axis (read-only)
+Default value: 0
+Saved in: -
+
+View.MaxY
+Maximum view coordinate along the Y-axis (read-only)
+Default value: 0
+Saved in: -
+
+View.MaxZ
+Maximum view coordinate along the Z-axis (read-only)
+Default value: 0
+Saved in: -
+
+View.Min
+Minimum value in the view (read-only)
+Default value: 0
+Saved in: -
+
+View.MinX
+Minimum view coordinate along the X-axis (read-only)
+Default value: 0
+Saved in: -
+
+View.MinY
+Minimum view coordinate along the Y-axis (read-only)
+Default value: 0
+Saved in: -
+
+View.MinZ
+Minimum view coordinate along the Z-axis (read-only)
+Default value: 0
+Saved in: -
+
+View.NbIso
+Number of intervals
+Default value: 15
+Saved in: General.OptionsFileName
+
+View.NbTimeStep
+Number of time steps in the view (do not change this!)
+Default value: 1
+Saved in: -
+
+View.NormalRaise
+Elevation of the view along the normal (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.Normals
+Display size of normal vectors (in pixels)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.OffsetX
+Translation of the view along X-axis (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.OffsetY
+Translation of the view along Y-axis (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.OffsetZ
+Translation of the view along Z-axis (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.PointSize
+Display size of points (in pixels)
+Default value: 3
+Saved in: General.OptionsFileName
+
+View.PointType
+Display points as solid color dots (0), 3D spheres (1), scaled dots (2) or scaled spheres (3)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.PositionX
+X position (in pixels) of the scale or 2D plot (< 0: measure from right edge; >= 1e5: centered)
+Default value: 100
+Saved in: General.OptionsFileName
+
+View.PositionY
+Y position (in pixels) of the scale or 2D plot (< 0: measure from bottom edge; >= 1e5: centered)
+Default value: 50
+Saved in: General.OptionsFileName
+
+View.RaiseX
+Elevation of the view along X-axis (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.RaiseY
+Elevation of the view along Y-axis (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.RaiseZ
+Elevation of the view along Z-axis (in model coordinates)
+Default value: 0
+Saved in: -
+
+View.RangeType
+Value scale range type (1=default, 2=custom, 3=per time step)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.SaturateValues
+Saturate the view values to custom min and max (1=true, 0=false)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ScaleType
+Value scale type (1=linear, 2=logarithmic, 3=double logarithmic)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.ShowElement
+Show element boundaries?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.ShowScale
+Show value scale?
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.ShowTime
+Time display mode (0=hidden, 1=value if multi-step, 2=value always, 3=step if multi-step, 4=step always)
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.SmoothNormals
+Smooth the normals?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.Stipple
+Stipple curves in 2D plots?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.Tangents
+Display size of tangent vectors (in pixels)
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.TargetError
+Target representation error for adaptive views
+Default value: 0.01
+Saved in: General.OptionsFileName
+
+View.TensorType
+Tensor Visualization Type
+Default value: 1
+Saved in: General.OptionsFileName
+
+View.TimeStep
+Current time step displayed
+Default value: 0
+Saved in: -
+
+View.TransformXX
+Element (1,1) of the 3x3 coordinate transformation matrix
+Default value: 1
+Saved in: -
+
+View.TransformXY
+Element (1,2) of the 3x3 coordinate transformation matrix
+Default value: 0
+Saved in: -
+
+View.TransformXZ
+Element (1,3) of the 3x3 coordinate transformation matrix
+Default value: 0
+Saved in: -
+
+View.TransformYX
+Element (2,1) of the 3x3 coordinate transformation matrix
+Default value: 0
+Saved in: -
+
+View.TransformYY
+Element (2,2) of the 3x3 coordinate transformation matrix
+Default value: 1
+Saved in: -
+
+View.TransformYZ
+Element (2,3) of the 3x3 coordinate transformation matrix
+Default value: 0
+Saved in: -
+
+View.TransformZX
+Element (3,1) of the 3x3 coordinate transformation matrix
+Default value: 0
+Saved in: -
+
+View.TransformZY
+Element (3,2) of the 3x3 coordinate transformation matrix
+Default value: 0
+Saved in: -
+
+View.TransformZZ
+Element (3,3) of the 3x3 coordinate transformation matrix
+Default value: 1
+Saved in: -
+
+View.Type
+Type of plot (1=3D, 2=2D space, 3=2D time)
+Default value: 1
+Saved in: -
+
+View.UseGeneralizedRaise
+Use generalized raise?
+Default value: 0
+Saved in: General.OptionsFileName
+
+View.VectorType
+Vector display type (1=segment, 2=arrow, 3=pyramid, 4=3D arrow, 5=displacement, 6=comet)
+Default value: 4
+Saved in: General.OptionsFileName
+
+View.Visible
+Is the view visible?
+Default value: 1
+Saved in: -
+
+View.Width
+Width (in pixels) of the scale or 2D plot
+Default value: 300
+Saved in: General.OptionsFileName
+
+View.Color.Points
+Point color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Lines
+Line color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Triangles
+Triangle color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Quadrangles
+Quadrangle color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Tetrahedra
+Tetrahedron color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Hexahedra
+Hexahedron color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Prisms
+Prism color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Pyramids
+Pyramid color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Tangents
+Tangent vector color
+Default value: {255,255,0}
+Saved in: General.OptionsFileName
+
+View.Color.Normals
+Normal vector color
+Default value: {255,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Text2D
+2D text color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Text3D
+3D text color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.Color.Axes
+Axes color
+Default value: {0,0,0}
+Saved in: General.OptionsFileName
+
+View.ColorTable
+Color table used to draw the view
+Saved in: General.OptionsFileName

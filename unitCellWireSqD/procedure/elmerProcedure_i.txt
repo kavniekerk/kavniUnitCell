@@ -1,0 +1,106 @@
+### solving electric field with gmsh only or gmsh/elmer
+
+### gmsh only option
+
+# I have included 3 different files to solve, of varying complexities, please try all
+
+# 1 - gemcell_wire_14.geo - small description - four half steel wires within square - version requested by r. neveling
+# 2 - gemcell_square_10a.geo - small description - original file, able to expand the grid to any size required 
+# 3 - gemcell_square_10b.geo - small description - reduced version the of the original, only four windows
+# 4 - gemcell_square_10c.geo - small description - pillar removed and smaller version
+
+## please download the following binaries from the respective websites
+
+### gmsh - installation
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+download
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+wget http://gmsh.info/bin/Linux/gmsh-3.0.6-Linux64.tgz
+tar -xf gmsh-3.0.6-Linux64.tgz
+
+# navigate to the directory and launch the executable - gmsh
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+general requirements for all
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+# when the gmsh executable has been launched, find the chosen .geo file and open it
+# click on the mesh plus icon and then the 3D icon in the window, meshing the .geo file
+
+## NB numerous errors might result from the meshing, hence adapt the meshing to something that produces 0 errors and 0 warnings
+# NB I was using Frontal algorithm for 2D meshing, and Frontal algorithm for 3D meshing - this produces a mesh with 0 errors and 0 warnings, go to Tools/Options/Mesh/General
+
+## save the Mesh by clicking on the Save icon, the file .msh file should be saved
+
+### elmer - installation
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+download
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+debian/ubuntu:
+go to https://www.csc.fi/web/elmer/binaries
+
+centos/sl7:
+go to https://www.csc.fi/web/elmer/sources-and-compilation
+
+## utilize the command line tools for elmer (ElmerGUI, ElmerGrid, ElmerSolver)
+
+## create an Elmer compatible mesh with the following command:
+
+ElmerGrid 14 2 {name of file}.msh -autoclean
+
+## check the mesh in Elmer GUI
+
+the file should produce the relevant surfaces and bodies
+
+## gemcell_wire_14.msh - should produce [1 8] surfaces (boundary types) & [1 3] volumes [material types]
+## a list will show with the surfaces & volumes
+
+ElmerGrid 14 2 gemcell_wire_14.msh -autoclean
+
+# the command will produce four files in a newly created directory under the same name as the mesh file - hence: gemcell_wire_14
+# utilize ElmerGUI - check the mesh files
+
+ElmerGUI
+
+# then open the mesh files and check their structure
+# rename the directory just created to the following: elmer_visual_gemcell_wire_14
+# if you are content, close and run the following command
+
+ElmerSolver {file name}.sif
+
+# in this instance:
+
+ElmerSolver gemcell_wire_14_constant_no_pillar.sif
+
+# the solver should begin and solve the model
+# two output files are generated in the directory: elmer_visual_gemcell_wire_14, these are .vtu files. please use paraview to view these files
+
+### paraview - installation
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+download
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+su -c 'yum install -y mesa-libGLU libSM libXrender fontconfig libXt'
+cd
+wget https://www.paraview.org/download/ParaView-5.0.1-Qt4-OpenGL2-MPI-Linux-64bit.tar.gz
+tar -xzf ParaView-5.0.1-Qt4-OpenGL2-MPI-Linux-64bit.tar.gz
+cd ParaView-5.0.1-Qt4-OpenGL2-MPI-Linux-64bit/bin
+./paraview
+
+# to view in paraview, just open paraview, go to File/Open/ find the .vtu file and open it
+
+# click on the small eyeball in the left window, until it is black and the model appears
+# once it appears, look down the left window and find the drop down list with the 'potential' option and click on this
+# you should see the electromagnetic field, with a legend to give guidance
+
+# try the other .sif files if you wish, or alter to recommendations.
+
+## repeat the procedure for all the other directories, by just altering the filenames are required
+
+
+

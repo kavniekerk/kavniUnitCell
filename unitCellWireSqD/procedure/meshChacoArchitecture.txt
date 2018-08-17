@@ -1,0 +1,94 @@
+Mesh.ChacoArchitecture = 3;
+// (Adv. Chaco): Parallel architecture topology (0=hypercube, 1-3=mesh dimensions)
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoEigensolver = 1;
+// (Adv. Chaco): Type of eigensolver for a spectral algorithm (0=Lanczos, 1=Multilevel RQI/Symmlq)
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoEigTol = 0.001;
+// (Adv. Chaco): Tolerance of the eigensolver for spectral or multilevel-KL algorithms
+// Default value: 0.001
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoGlobalMethod = 1;
+// Chaco partitioning algorithm (1=Multilevel-KL, 2=Spectral, 4=Linear, 5=Random, 6=Scattered)
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoHypercubeDim = 2;
+// (Adv. Chaco): Dimensional partitioning for a hypercube topology
+// Default value: 2
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoLocalMethod = 1;
+// (Adv. Chaco): Local partitioning algorithm
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoMeshDim1 = 4;
+// (Adv. Chaco): Number of partitions in the first dimension of a mesh topology
+// Default value: 4
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoMeshDim2 = 1;
+// (Adv. Chaco): Number of partitions in the second dimension of a mesh topology
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoMeshDim3 = 1;
+// (Adv. Chaco): Number of partitions in the third dimension of a mesh topology
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoPartitionSection = 1;
+// (Adv. Chaco): Partition by (1=bisection, 2=quadrisection, 3=octasection
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoSeed = 7.65432e+06;
+// (Adv. Chaco): Seed for random number generator
+// Default value: 7.65432e+06
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoVMax = 250;
+// (Adv. Chaco): Maximum vertices in a coarse graph (for multilevel-KL algorithm and Multilevel RQI/Symmlq eigensolver)
+// Default value: 250
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoParamINTERNAL_VERTICES = 0;
+// (Adv. Chaco): Parameter INTERNAL_VERTICES
+// Default value: 0
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoParamREFINE_MAP = 1;
+// (Adv. Chaco): Parameter REFINE_MAP
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoParamREFINE_PARTITION = 0;
+// (Adv. Chaco): Parameter REFINE_PARTITION
+// Default value: 0
+// Saved in: General.OptionsFileName
+
+Mesh.ChacoParamTERMINAL_PROPOGATION = 0;
+// (Adv. Chaco): Parameter TERMINAL_PROPOGATION
+// Default value: 0
+// Saved in: General.OptionsFileName
+
+Mesh.MetisAlgorithm = 1;
+// METIS partitioning algorithm (1=Recursive, 2=K-way)
+// Default value: 1
+// Saved in: General.OptionsFileName
+
+Mesh.MetisEdgeMatching = 3;
+// (Adv. METIS): Determines the matching type (1=Random, 2=Heavy-Edge, 3=Sorted Heavy-Edge)
+// Default value: 3
+// Saved in: General.OptionsFileName
+
+Mesh.MetisRefinementAlgorithm = 3;
+// (Adv. METIS): Algorithm for k-way refinement (1=Random, 2=Greedy, 3=Random with minimized connectivity)
+// Default value: 3
+// Saved in: General.OptionsFileName

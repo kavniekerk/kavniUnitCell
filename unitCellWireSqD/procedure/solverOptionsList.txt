@@ -1,0 +1,690 @@
+B.4 Solver options list
+Solver.SocketName
+Name of socket (TCP/IP if it contains the `:' character, UNIX otherwise)
+Default value: ".gmshsock"
+Saved in: General.OptionsFileName
+
+Solver.Name0
+Name of solver 0
+Default value: "GetDP"
+Saved in: General.OptionsFileName
+
+Solver.Help0
+Help string for solver 0
+Default value: "A General environment for the treatment of Discrete Problems. Copyright (C) 1997-2009 Patrick Dular and Christophe Geuzaine. Visit http://www.geuz.org/getdp/ for more info"
+Saved in: General.OptionsFileName
+
+Solver.Executable0
+System command to launch solver 0 (should not contain the `&' character)
+Default value: "getdp"
+Saved in: General.OptionsFileName
+
+Solver.Extension0
+Default file name extension for solver 0
+Default value: ".pro"
+Saved in: General.OptionsFileName
+
+Solver.MeshName0
+Default mesh file name for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshCommand0
+Command used to specify the mesh file for solver 0
+Default value: "-msh %s"
+Saved in: General.OptionsFileName
+
+Solver.SocketCommand0
+Command to specify the socket to solver 0
+Default value: "-socket %s"
+Saved in: General.OptionsFileName
+
+Solver.NameCommand0
+Command to specify the problem name to solver 0
+Default value: "%s"
+Saved in: General.OptionsFileName
+
+Solver.OptionCommand0
+Command to get options from solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstOption0
+Label of first option for solver 0
+Default value: "Resolution"
+Saved in: General.OptionsFileName
+
+Solver.SecondOption0
+Label of second option for solver 0
+Default value: "PostOperation"
+Saved in: General.OptionsFileName
+
+Solver.ThirdOption0
+Label of third option for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthOption0
+Label of fourth option for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthOption0
+Label of fifth option for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButton0
+Label of first button for solver 0
+Default value: "Pre"
+Saved in: General.OptionsFileName
+
+Solver.FirstButtonCommand0
+Command associated with the first button for solver 0
+Default value: "-pre %s"
+Saved in: General.OptionsFileName
+
+Solver.SecondButton0
+Label of second button for solver 0
+Default value: "Cal"
+Saved in: General.OptionsFileName
+
+Solver.SecondButtonCommand0
+Command associated with the second button for solver 0
+Default value: "-cal"
+Saved in: General.OptionsFileName
+
+Solver.ThirdButton0
+Label of third button for solver 0
+Default value: "Pos"
+Saved in: General.OptionsFileName
+
+Solver.ThirdButtonCommand0
+Command associated with the third button for solver 0
+Default value: "-pos %s"
+Saved in: General.OptionsFileName
+
+Solver.FourthButton0
+Label of fourth button for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButtonCommand0
+Command associated with the fourth button for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButton0
+Label of fifth button for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButtonCommand0
+Command associated with the fifth button for solver 0
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Name1
+Name of solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Help1
+Help string for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Executable1
+System command to launch solver 1 (should not contain the `&' character)
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Extension1
+Default file name extension for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshName1
+Default mesh file name for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshCommand1
+Command used to specify the mesh file for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SocketCommand1
+Command to specify the socket to solver 1
+Default value: "-socket %s"
+Saved in: General.OptionsFileName
+
+Solver.NameCommand1
+Command to specify the problem name to solver 1
+Default value: "%s"
+Saved in: General.OptionsFileName
+
+Solver.OptionCommand1
+Command to get options from solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstOption1
+Label of first option for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondOption1
+Label of second option for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdOption1
+Label of third option for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthOption1
+Label of fourth option for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthOption1
+Label of fifth option for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButton1
+Label of first button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButtonCommand1
+Command associated with the first button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButton1
+Label of second button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButtonCommand1
+Command associated with the second button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButton1
+Label of third button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButtonCommand1
+Command associated with the third button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButton1
+Label of fourth button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButtonCommand1
+Command associated with the fourth button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButton1
+Label of fifth button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButtonCommand1
+Command associated with the fifth button for solver 1
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Name2
+Name of solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Help2
+Help string for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Executable2
+System command to launch solver 2 (should not contain the `&' character)
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Extension2
+Default file name extension for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshName2
+Default mesh file name for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshCommand2
+Command used to specify the mesh file for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SocketCommand2
+Command to specify the socket to solver 2
+Default value: "-socket %s"
+Saved in: General.OptionsFileName
+
+Solver.NameCommand2
+Command to specify the problem name to solver 2
+Default value: "%s"
+Saved in: General.OptionsFileName
+
+Solver.OptionCommand2
+Command to get options from solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstOption2
+Label of first option for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondOption2
+Label of second option for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdOption2
+Label of third option for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthOption2
+Label of fourth option for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthOption2
+Label of fifth option for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButton2
+Label of first button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButtonCommand2
+Command associated with the first button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButton2
+Label of second button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButtonCommand2
+Command associated with the second button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButton2
+Label of third button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButtonCommand2
+Command associated with the third button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButton2
+Label of fourth button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButtonCommand2
+Command associated with the fourth button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButton2
+Label of fifth button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButtonCommand2
+Command associated with the fifth button for solver 2
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Name3
+Name of solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Help3
+Help string for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Executable3
+System command to launch solver 3 (should not contain the `&' character)
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Extension3
+Default file name extension for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshName3
+Default mesh file name for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshCommand3
+Command used to specify the mesh file for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SocketCommand3
+Command to specify the socket to solver 3
+Default value: "-socket %s"
+Saved in: General.OptionsFileName
+
+Solver.NameCommand3
+Command to specify the problem name to solver 3
+Default value: "%s"
+Saved in: General.OptionsFileName
+
+Solver.OptionCommand3
+Command to get options from solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstOption3
+Label of first option for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondOption3
+Label of second option for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdOption3
+Label of third option for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthOption3
+Label of fourth option for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthOption3
+Label of fifth option for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButton3
+Label of first button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButtonCommand3
+Command associated with the first button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButton3
+Label of second button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButtonCommand3
+Command associated with the second button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButton3
+Label of third button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButtonCommand3
+Command associated with the third button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButton3
+Label of fourth button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButtonCommand3
+Command associated with the fourth button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButton3
+Label of fifth button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButtonCommand3
+Command associated with the fifth button for solver 3
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Name4
+Name of solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Help4
+Help string for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Executable4
+System command to launch solver 4 (should not contain the `&' character)
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.Extension4
+Default file name extension for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshName4
+Default mesh file name for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.MeshCommand4
+Command used to specify the mesh file for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SocketCommand4
+Command to specify the socket to solver 4
+Default value: "-socket %s"
+Saved in: General.OptionsFileName
+
+Solver.NameCommand4
+Command to specify the problem name to solver 4
+Default value: "%s"
+Saved in: General.OptionsFileName
+
+Solver.OptionCommand4
+Command to get options from solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstOption4
+Label of first option for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondOption4
+Label of second option for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdOption4
+Label of third option for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthOption4
+Label of fourth option for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthOption4
+Label of fifth option for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButton4
+Label of first button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FirstButtonCommand4
+Command associated with the first button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButton4
+Label of second button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.SecondButtonCommand4
+Command associated with the second button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButton4
+Label of third button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.ThirdButtonCommand4
+Command associated with the third button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButton4
+Label of fourth button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FourthButtonCommand4
+Command associated with the fourth button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButton4
+Label of fifth button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.FifthButtonCommand4
+Command associated with the fifth button for solver 4
+Default value: ""
+Saved in: General.OptionsFileName
+
+Solver.AlwaysListen
+Always listen to incoming connection requests?
+Default value: 0
+Saved in: General.OptionsFileName
+
+Solver.ClientServer0
+Connect solver 0 to the Gmsh server
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.ClientServer1
+Connect solver 1 to the Gmsh server
+Default value: 0
+Saved in: General.OptionsFileName
+
+Solver.ClientServer2
+Connect solver 2 to the Gmsh server
+Default value: 0
+Saved in: General.OptionsFileName
+
+Solver.ClientServer3
+Connect solver 3 to the Gmsh server
+Default value: 0
+Saved in: General.OptionsFileName
+
+Solver.ClientServer4
+Connect solver 4 to the Gmsh server
+Default value: 0
+Saved in: General.OptionsFileName
+
+Solver.MergeViews0
+Automatically merge any post-processing view created by solver 0
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.MergeViews1
+Automatically merge any post-processing view created by solver 1
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.MergeViews2
+Automatically merge any post-processing view created by solver 2
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.MergeViews3
+Automatically merge any post-processing view created by solver 3
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.MergeViews4
+Automatically merge any post-processing view created by solver 4
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.Plugins
+Enable default solver plugins?
+Default value: 0
+Saved in: General.OptionsFileName
+
+Solver.PopupMessages0
+Automatically display messages produced by solver 0
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.PopupMessages1
+Automatically display messages produced by solver 1
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.PopupMessages2
+Automatically display messages produced by solver 2
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.PopupMessages3
+Automatically display messages produced by solver 3
+Default value: 1
+Saved in: General.OptionsFileName
+
+Solver.PopupMessages4
+Automatically display messages produced by solver 4
+Default value: 1
+Saved in: General.OptionsFileName

@@ -1,0 +1,36 @@
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/// PROCEDURE TO SOLVE MESH
+
+// Mesh Module
+
+// Unstructured mesh - model should not self intersect
+// Attempt to set the Mesh.RandomFactor * size(triangle)/size(model) so that it approaches machine accuracy. Increase Mesh.RandomFactor
+
+// Utilize different 2D & 3D meshing algorithms, or try to alter the characteristic lengths so that the mesh elements geometry better match the surface and volume elements in your geometry
+
+// Optimize mesh quality !!!
+
+// Non-recombined 3D extruded wire volume elements fail - swapping algorithm is bad, try to change surface mesh a bit, recombine your mesh to produce/generate prisms/hexahedra instead of tetrahedra
+
+// Recombine surfaces
+
+// Elliptic mesh generator
+// Utilize Mesh.Smoothing = 10;
+
+// Curved surfaces - gmsh can generate 1st order and 2nd order elements. click on second order in the mesh menu, after mesh is completed. To always generate 2nd second elements, select 'generate second order elements' in the mesh option panel. 
+// Command line use '-order 2'
+// Explore the mesh by utilizing 'clipping planes,' /Tools/Clipping Planes/ 
+
+// /Tools/Statistics/ - They measure the quality of the tetrahedra in a mesh:
+
+// Gamma ~ inscribed_radius / circumscribed_radius
+// Eta ~ volume^(2/3) / sum_edge_length^2
+// Rho ~ min_edge_length / max_edge_length
+
+// The graphs plot the the number of elements vs. the quality measure
+
+
+// Generate fine mesh for curvilinear result to conplex curves
+// Utilize second order and 
+
+// Do not combine tets, when recombining quads

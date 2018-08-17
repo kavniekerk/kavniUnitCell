@@ -1,0 +1,179 @@
+### solving electric field with gmsh only or gmsh/elmer
+
+### gmsh only option
+
+# I have included 3 different files to solve, of varying complexities, please try all
+
+# 1 - gemcell_wire_14.geo - small description - four half steel wires within square - version requested by r. neveling
+# 2 - gemcell_square_10a.geo - small description - original file, able to expand the grid to any size required 
+# 3 - gemcell_square_10b.geo - small description - reduced version the of the original, only four windows
+# 4 - gemcell_square_10c.geo - small description - pillar removed and smaller version
+
+## please download the following binaries from the respective websites
+
+### gmsh - installation
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+download
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+wget http://gmsh.info/bin/Linux/gmsh-3.0.6-Linux64.tgz
+tar -xf gmsh-3.0.6-Linux64.tgz
+
+# navigate to the directory and launch the executable - gmsh
+
+### getdp - installation
+
+wget http://getdp.info/bin/Linux/getdp-2.11.3-Linux64c.tgz
+tar -xf getdp-2.11.3-Linux64c.tgz
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+general requirements for all
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+# when the gmsh executable has been launched, find the chosen .geo file and open it
+# click on the solver plus icon and then the getdp icon in the window, and find the executable where it has been uncompressed
+
+# the dependency files associated with the .geo file should automatically populate the window
+
+### commence to alter the surface and volume variables as follows:
+
+# GetDP Model Name: single .pro file
+# Input files: All the .pro files
+# Model check: anything you wish, but set to None
+
+#### set the following parameters to as you see fit
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+# 1 - gemcell_wire_14.geo - small description - four half steel wires within square - version requested by r. neveling
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Parameters - gemcell_wire_14.geo
+
+# boundary conditions - gemcell_wire_14.geo
+
+# physical surface 294 - gas phase surface area
+# physical surface 295 - lower conductor/electrode copper plate solid phase surface area
+# physical surface 296 - mesh stainless steel wire solid phase surface area
+# physical surface 297 - upper electrode solid phase surface area
+# physical surface 298 - bounded surface - periodic - bdh_1_1
+# physical surface 299 - bounded surface - periodic - bdh_1_2
+# physical surface 300 - bounded surface - periodic - bdh_2_1
+# physical surface 301 - bounded surface - periodic - bdh_2_2
+
+# materials - gemcell_wire_14.geo
+
+# physical volume 291 - gas phase volume
+# physical volume 292 - lower conductor/electrode copper plate solid phase volume
+# physical volume 293 - mesh stainless steel wire solid phase volume
+
+#### run the simulation by clicking on the run button
+
+## NB numerous errors might result from the meshing, hence adapt the meshing to something that produces 0 errors and 0 warnings
+# NB I was using Frontal algorithm for 2D meshing, and Frontal algorithm for 3D meshing - this produces a mesh with 0 errors and 0 warnings, go to Tools/Options/Mesh/General
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+# 2 - gemcell_square_10a.geo - small description - original file, able to expand the grid to any size required 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Parameters - gemcell_square_10a.geo
+
+# boundary conditions - gemcell_square_10a.geo
+
+# physical surface 700000 - bounded surface - periodic - bdh_1_1
+# physical surface 710000 - bounded surface - periodic - bdh_1_2
+# physical surface 720000 - bounded surface - periodic - bdh_2_1
+# physical surface 730000 - bounded surface - periodic - bdh_2_2
+# physical surface 740000 - upper electrode solid phase surface area
+
+# physical surface 900000 - dielectric pillar solid phase surface area
+# physical surface 920000 - lower conductor/electrode copper plate solid phase surface area
+# physical surface 930000 - mesh stainless steel wire solid phase surface area - physwire x1
+# physical surface 940000 - mesh stainless steel wire solid phase surface area - physwire y1
+# physical surface 950000 - mesh stainless steel wire solid phase surface area - physwire x2
+# physical surface 960000 - mesh stainless steel wire solid phase surface area - physwire y2
+
+# materials - gemcell_square_10a.geo
+
+# physical volume 790000 - gas phase volume
+# physical volume 800000 - dielectric pillar solid phase volume
+# physical volume 810000 - lower conductor/electrode copper plate solid phase volume
+# physical volume 820000 - mesh stainless steel wire solid phase volume - physwire x1
+# physical volume 830000 - mesh stainless steel wire solid phase volume - physwire y1
+# physical volume 840000 - mesh stainless steel wire solid phase volume - physwire x2
+# physical volume 850000 - mesh stainless steel wire solid phase volume - physwire y2
+
+#### run the simulation by clicking on the run button
+
+## NB numerous errors might result from the meshing, hence adapt the meshing to something that produces 0 errors and 0 warnings
+# NB I was using Frontal algorithm for 2D meshing, and Frontal algorithm for 3D meshing - this produces a mesh with 0 errors and 0 warnings, go to Tools/Options/Mesh/General
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+# 3 - gemcell_square_10b.geo - small description - reduced version the of the original, only four windows
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Parameters - gemcell_square_10b.geo
+
+# boundary conditions - gemcell_square_10b.geo
+
+# physical surface 700000 - bounded surface - periodic - bdh_1_1
+# physical surface 710000 - bounded surface - periodic - bdh_1_2
+# physical surface 720000 - bounded surface - periodic - bdh_2_1
+# physical surface 730000 - bounded surface - periodic - bdh_2_2
+# physical surface 740000 - upper electrode solid phase surface area
+
+# physical surface 900000 - dielectric pillar solid phase surface area
+# physical surface 920000 - lower conductor/electrode copper plate solid phase surface area
+# physical surface 930000 - mesh stainless steel wire solid phase surface area - physwire x1
+# physical surface 940000 - mesh stainless steel wire solid phase surface area - physwire y1
+# physical surface 950000 - mesh stainless steel wire solid phase surface area - physwire x2
+# physical surface 960000 - mesh stainless steel wire solid phase surface area - physwire y2
+
+# materials - gemcell_square_10b.geo
+
+# physical volume 790000 - gas phase volume
+# physical volume 800000 - dielectric pillar solid phase volume
+# physical volume 810000 - lower conductor/electrode copper plate solid phase volume
+# physical volume 820000 - mesh stainless steel wire solid phase volume - physwire x1
+# physical volume 830000 - mesh stainless steel wire solid phase volume - physwire y1
+# physical volume 840000 - mesh stainless steel wire solid phase volume - physwire x2
+# physical volume 850000 - mesh stainless steel wire solid phase volume - physwire y2
+
+#### run the simulation by clicking on the run button
+
+## NB numerous errors might result from the meshing, hence adapt the meshing to something that produces 0 errors and 0 warnings
+# NB I was using Frontal algorithm for 2D meshing, and Frontal algorithm for 3D meshing - this produces a mesh with 0 errors and 0 warnings, go to Tools/Options/Mesh/General
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+# 4 - gemcell_square_10c.geo - small description - pillar removed and smaller version
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Parameters - gemcell_square_10c.geo
+
+# boundary conditions - gemcell_square_10c.geo
+
+# physical surface 700000 - bounded surface - periodic - bdh_1_1
+# physical surface 710000 - bounded surface - periodic - bdh_1_2
+# physical surface 720000 - bounded surface - periodic - bdh_2_1
+# physical surface 730000 - bounded surface - periodic - bdh_2_2
+# physical surface 740000 - upper electrode solid phase surface area
+
+# physical surface 920000 - lower conductor/electrode copper plate solid phase surface area
+# physical surface 930000 - mesh stainless steel wire solid phase surface area - physwire x1
+# physical surface 940000 - mesh stainless steel wire solid phase surface area - physwire y1
+# physical surface 950000 - mesh stainless steel wire solid phase surface area - physwire x2
+# physical surface 960000 - mesh stainless steel wire solid phase surface area - physwire y2
+
+# materials - gemcell_square_10c.geo
+
+# physical volume 790000 - gas phase volume
+# physical volume 810000 - lower conductor/electrode copper plate solid phase volume
+# physical volume 820000 - mesh stainless steel wire solid phase volume - physwire x1
+# physical volume 830000 - mesh stainless steel wire solid phase volume - physwire y1
+# physical volume 840000 - mesh stainless steel wire solid phase volume - physwire x2
+# physical volume 850000 - mesh stainless steel wire solid phase volume - physwire y2
+
+#### run the simulation by clicking on the run button
+
+## NB numerous errors might result from the meshing, hence adapt the meshing to something that produces 0 errors and 0 warnings
+# NB I was using Frontal algorithm for 2D meshing, and Frontal algorithm for 3D meshing - this produces a mesh with 0 errors and 0 warnings, go to Tools/Options/Mesh/General
