@@ -1,5 +1,5 @@
-Include "mmgas_component_label.pro";
-Include "mmgas_meshing_options.pro";
+Include "mmgasComponentLabel.pro";
+Include "mmgasMeshingOptions.pro";
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /// MMGAS_STR_WIRE GEOMETRY MODULE
@@ -8,7 +8,7 @@ Include "mmgas_meshing_options.pro";
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /// GENERAL INFORMATION
 //
-// mmegas_square_straight_10c.geo
+// unitCellStrWireSqC.geo
 //
 // Description
 //

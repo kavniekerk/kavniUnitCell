@@ -1,25 +1,12 @@
-Include "pipe_data.pro";
+Include "pipeData.pro";
 
 // *********************************************************************
-// gemcell.geo
+// unitCellCurWireSqC.geo
 //
 // Description:
-// Geometry file for a GEM cell.
+// Geometry file for a unitCellCurWireSqC cell.
 // This cell can be repeated any number of times within Garfield 
-// to construct an arbitrarily large GEM.
-//
-// References: 
-// 1. This specific form of GEM cell was found in 
-//    "A How-to Approach for a 3d Simulation of Charge Transfer
-//    Characteristics in a Gas Electron Multiplier (GEM)" by A. Sharma.
-//    As of 04/08/10, this document can be found at:
-//    www.slac.stanford.edu/pubs/icfa/fall99/paper2/paper2.pdf
-//
-// See also:
-// 2. A. Sharma.  Nucl. Instr. Meth. A 454, 267-271 (2000).
-// 3. O. Bouianov et al. Nucl. Instr. Meth. A 450, 277-287 (2000).
-// 4. V. Tikhonov and R. Veenhof. Nucl. Instr. Meth. A 478, 452-459 (2002).
-// 5. C. Shalem et al. Nucl. Instr. Meth. A, 558, 475–489 (2006).
+// to construct an arbitrarily large unitCellCurWireSqC.
 //
 // *********************************************************************
 
